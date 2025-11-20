@@ -1,0 +1,49 @@
+module.exports = {}
+{
+  "name": "carelinkpro-nextjs-final",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "14.1.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "jspdf": "^2.5.1"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.0",
+    "postcss": "^8.4.23",
+    "autoprefixer": "^10.4.14"
+  }
+}
+
+module.exports = {
+  plugins: {
+    tailwindcss: {},
+    autoprefixer: {},
+  },
+}
+
+
+CareLinkPro — Next.js full project ready for Netlify.
+
+How to run locally:
+1. cd carelink
+2. npm install
+3. npm run dev
+
+Netlify:
+- netlify.toml at repo root points to base = "carelink"
+- build command: npm install && npm run build
+- publish: .next
+
+
+module.exports = {
+  content: ["./app/**/*.{js,jsx}", "./components/**/*.{js,jsx}"],
+  theme: { extend: {} },
+  plugins: [],
+}
